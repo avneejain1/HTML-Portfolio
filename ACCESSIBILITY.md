@@ -91,4 +91,4 @@ Every text color pair on the site, checked against WCAG AA (4.5:1 for normal tex
 
 ## Keyboard navigation video
 
-A 1–2 minute narrated video of me browsing the site using only the keyboard: [link to video]
+A 1–2 minute narrated video of me browsing the site using only the keyboard: [Watch the video on Google Drive](https://drive.google.com/file/d/16k8xVDC-SJl3CmVpijiAclCJO5dz5anR/view?usp=sharing)
