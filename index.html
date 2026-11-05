@@ -20,13 +20,14 @@
 
   <header>
     <p id="top"><a href="#top"><strong>Avnee Jain</strong></a></p>
-    <p>Tech, consulting, and a little adventure.</p>
 
     <nav aria-label="Primary">
       <ul>
+        <li><a href="#intro" aria-current="page">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a class="button" href="#contact">Let's talk</a></li>
       </ul>
     </nav>
   </header>
@@ -35,104 +36,165 @@
 
     <!-- HERO -->
     <section id="intro" aria-labelledby="intro-heading">
-      <h1 id="intro-heading">Hi, I'm Avnee.</h1>
-      <p>
-        I'm a senior at Michigan State University studying Information Science with a minor in Business,
-        graduating in <time datetime="2027">2027</time>.
+      <div class="hero-text">
+        <p class="eyebrow">Information Science &middot; Michigan State '27</p>
+        <h1 id="intro-heading">Hi, I'm <span>Avnee.</span></h1>
+        <p>
+          I'm a senior at Michigan State University studying Information Science with a minor in Business,
+          graduating in <time datetime="2027">2027</time>.
+        </p>
+        <p>I'm headed toward a career in Tech or AI with some design along the way.</p>
+        <p class="actions">
+          <a class="button" href="#projects">See my projects</a>
+          <a class="button button-secondary" href="#contact">Get in touch</a>
+        </p>
+      </div>
+
+      <p class="stamp">
+        <small>Farmington Hills &middot; Michigan</small>
+        <strong>Tech, consulting</strong>
+        <span>&amp; a little adventure</span>
       </p>
-      <p>I'm headed toward a career in Tech or AI with some design along the way.</p>
-      <p>
-        <a href="#projects">See my projects</a> or <a href="#contact">get in touch</a>.
-      </p>
+
+      <ul class="facts">
+        <li><strong>2027</strong> Graduating from MSU in Information Science with a Business minor</li>
+        <li><strong>4 roles</strong> From Salesforce QA testing to UNICEF advocacy</li>
+        <li><strong>5 projects</strong> Across UX design, data, AI, and web</li>
+      </ul>
     </section>
 
     <!-- ABOUT -->
     <section id="about" aria-labelledby="about-heading">
-      <h2 id="about-heading">About</h2>
+      <p class="eyebrow">About me</p>
+      <h2 id="about-heading">Curious, caring, and always up for the next adventure.</h2>
 
-      <p>
+      <p class="lead">
         I grew up in Farmington Hills, Michigan. Outside of class, I'm usually planning my next trip or hunting
         down somewhere new to eat! I'll try almost anything once, and I bring that same sense of adventure to my work.
-        If you ask my friends and they'd say I'm funny, spontaneous, and caring.
+        If you ask my friends, they'd say I'm funny, spontaneous, and caring.
       </p>
-      <p>
-        Information Science paired with a business minor puts me right where technology meets AI and
-        decisions it's built for, which is exactly the space I want to work in.
+      <p class="lead">
+        Information Science paired with a business minor puts me right where technology and AI meet the
+        decisions they're built for, which is exactly the space I want to work in.
       </p>
 
-      <h3>Experience</h3>
+      <div class="experience">
+        <h3>Experience</h3>
+        <p class="hint">Open a role to see what I did there.</p>
 
-      <article aria-labelledby="hwk-heading">
-        <h4 id="hwk-heading">Digital Transformation Intern, H.W. Kaufman Group</h4>
-        <p>
-          Supported enterprise Salesforce migration and technical roadmap initiatives for a global specialty insurance group
-          assisting with implementation and enhancement of underwriting and policy workflows.
+        <details open>
+          <summary>
+            <h4 id="hwk-heading">Digital Transformation Intern</h4>
+            <span>H.W. Kaufman Group</span>
+          </summary>
+          <ul>
+            <li>
+              Supported enterprise Salesforce migration and technical roadmap initiatives for a global specialty insurance group,
+              assisting with implementation and enhancement of underwriting and policy workflows.
+            </li>
+            <li>
+              Performed QA testing across insurance products, rates, and policy forms, validating 100+ rating formulas and eligibility
+              requirements; logged and triaged 40+ defects in Jira and Confluence within Agile sprint cycles.
+            </li>
+            <li>
+              Researched and presented to executive leadership on the growth of telehealth and its implications for specialty
+              insurance underwriting, risk exposure, and product design.
+            </li>
+          </ul>
+        </details>
 
-          Performed QA testing across insurance products, rates, and policy forms, validating 100+ rating formulas and eligibility
-          requirements; logged and triaged 40+ defects in Jira and Confluence within Agile sprint cycles.
+        <details>
+          <summary>
+            <h4 id="research-heading">Research Assistant</h4>
+            <span>Michigan State University &middot; <time datetime="2025-04">April 2025</time> to <time datetime="2025-09">September 2025</time></span>
+          </summary>
+          <ul>
+            <li>Labeled and preprocessed large image datasets in Roboflow, keeping them accurate and consistent for machine learning workflows.</li>
+            <li>Trained and fine-tuned object detection models to identify pigs across different environments and lighting conditions.</li>
+          </ul>
+        </details>
 
-          Researched and presented to executive leadership on the growth of telehealth and its implications for specialty
-          insurance underwriting, risk exposure, and product design
-        </p>
-      </article>
+        <details>
+          <summary>
+            <h4 id="unicef-heading">Secretary and Advocacy Chair</h4>
+            <span>UNICEF at Michigan State University &middot; <time datetime="2024-01">January 2024</time> to present</span>
+          </summary>
+          <ul>
+            <li>Lead advocacy campaigns and volunteer efforts that promote UNICEF's mission, and build partnerships that grow donations and visibility.</li>
+            <li>Coordinate meetings and keep communication flowing between teams so every meeting hits its goals.</li>
+          </ul>
+          <p>It's where my caring side and my spontaneous side get to team up.</p>
+        </details>
 
-      <article aria-labelledby="research-heading">
-        <h4 id="research-heading">Research Assistant, Michigan State University</h4>
-        <p><time datetime="2025-04">April 2025</time> to <time datetime="2025-09">September 2025</time></p>
-        <ul>
-          <li>Labeled and preprocessed large image datasets in Roboflow, keeping them accurate and consistent for machine learning workflows.</li>
-          <li>Trained and fine-tuned object detection models to identify pigs across different environments and lighting conditions.</li>
-        </ul>
-      </article>
+        <details>
+          <summary>
+            <h4 id="dq-heading">Team Member</h4>
+            <span>Dairy Queen &middot; <time datetime="2022-06">June 2022</time> to <time datetime="2024-08">August 2024</time></span>
+          </summary>
+          <ul>
+            <li>Served a wide range of customers, adjusting how I communicated to fit different ages and preferences.</li>
+            <li>Resolved customer concerns by listening for what they actually needed.</li>
+            <li>Suggested small changes to store layout and operations that helped things run smoother during rush hours.</li>
+          </ul>
+        </details>
+      </div>
 
-      <article aria-labelledby="unicef-heading">
-        <h4 id="unicef-heading">Secretary and Advocacy Chair, UNICEF at Michigan State University</h4>
-        <p><time datetime="2024-01">January 2024</time> to present</p>
-        <ul>
-          <li>Lead advocacy campaigns and volunteer efforts that promote UNICEF's mission, and build partnerships that grow donations and visibility.</li>
-          <li>Coordinate meetings and keep communication flowing between teams so every meeting hits its goals.</li>
-        </ul>
-        <p>It's where my caring side and my spontaneous side get to team up.</p>
-      </article>
+      <aside class="sidebar" aria-label="Skills and interests">
+        <div class="card toolkit">
+          <h3>Toolkit</h3>
+          <dl>
+            <dt>Languages</dt>
+            <dd>
+              <ul class="tags">
+                <li>Python</li><li>JavaScript</li><li>C++</li><li>HTML</li><li>CSS</li>
+              </ul>
+            </dd>
+            <dt>Design</dt>
+            <dd>
+              <ul class="tags">
+                <li>Figma</li><li>FigJam</li><li>Adobe Creative Cloud</li>
+              </ul>
+            </dd>
+            <dt>Platforms and tools</dt>
+            <dd>
+              <ul class="tags">
+                <li>Salesforce</li><li>Roboflow</li><li>Flask</li><li>React</li><li>Chrome DevTools</li><li>Git and GitHub</li>
+              </ul>
+            </dd>
+            <dt>Certifications</dt>
+            <dd>
+              <ul class="tags">
+                <li>Ethics in AI</li><li>Prompt Design in Vertex AI</li><li>Google Analytics for Business</li><li>Adobe Creative Cloud</li>
+              </ul>
+            </dd>
+            <dt>Relevant coursework</dt>
+            <dd>
+              <ul class="tags">
+                <li>Web Design in Media Settings</li><li>Practical Computing for Interactive Media</li><li>IT Network Management</li>
+              </ul>
+            </dd>
+          </dl>
+        </div>
 
-      <article aria-labelledby="dq-heading">
-        <h4 id="dq-heading">Team Member, Dairy Queen</h4>
-        <p><time datetime="2022-06">June 2022</time> to <time datetime="2024-08">August 2024</time></p>
-        <ul>
-          <li>Served a wide range of customers, adjusting how I communicated to fit different ages and preferences.</li>
-          <li>Resolved customer concerns by listening for what they actually needed.</li>
-          <li>Suggested small changes to store layout and operations that helped things run smoother during rush hours.</li>
-        </ul>
-      </article>
-
-      <h3>Toolkit</h3>
-      <dl>
-        <dt>Languages</dt>
-        <dd>Python, JavaScript, C++, HTML, CSS</dd>
-        <dt>Design</dt>
-        <dd>Figma, FigJam, Adobe Creative Cloud</dd>
-        <dt>Platforms and tools</dt>
-        <dd>Salesforce, Roboflow, Flask, React, Chrome DevTools, Git and GitHub</dd>
-        <dt>Certifications</dt>
-        <dd>Ethics in AI, Prompt Design in Vertex AI, Google Analytics for Business, Adobe Creative Cloud</dd>
-        <dt>Relevant coursework</dt>
-        <dd>Web Design in Media Settings, Practical Computing for Interactive Media, IT Network Management</dd>
-      </dl>
-
-      <h3>When I'm not working: </h3>
-      <ul>
-        <li>Traveling somewhere new</li>
-        <li>Finding the best food wherever I land</li>
-        <li>Saying yes to any adventure</li>
-      </ul>
+        <div class="card off-hours">
+          <h3>When I'm not working</h3>
+          <ul>
+            <li>Traveling somewhere new</li>
+            <li>Finding the best food wherever I land</li>
+            <li>Saying yes to any adventure</li>
+          </ul>
+        </div>
+      </aside>
     </section>
 
     <!-- PROJECTS -->
     <section id="projects" aria-labelledby="projects-heading">
-      <h2 id="projects-heading">Projects</h2>
-      <p>Things I've built or studied, and what each one taught me.</p>
+      <p class="eyebrow">Projects</p>
+      <h2 id="projects-heading">Things I've built or studied</h2>
+      <p class="lead">&hellip;and what each one taught me.</p>
 
       <article aria-labelledby="ecommerce-heading">
+        <ul class="tags"><li>UX</li><li>Figma</li></ul>
         <h3 id="ecommerce-heading">Mobile-friendly e-commerce redesign</h3>
         <p>
           A mobile-first redesign of an e-commerce site, built from real user research. I analyzed survey data to
@@ -146,6 +208,7 @@
       </article>
 
       <article aria-labelledby="forecast-heading">
+        <ul class="tags"><li>Python</li><li>Data</li></ul>
         <h3 id="forecast-heading">Website ad-revenue forecasting</h3>
         <p>
           A Python model that predicts a website's ad revenue from its traffic patterns and user engagement, plus a
@@ -159,6 +222,7 @@
       </article>
 
       <article aria-labelledby="chatbot-heading">
+        <ul class="tags"><li>AI</li><li>Flask</li></ul>
         <h3 id="chatbot-heading">MSU FAQ AI chatbot</h3>
         <p>
           An AI-powered chatbot that answers common questions about MSU automatically, connected to a web interface
@@ -171,6 +235,7 @@
       </article>
 
       <article aria-labelledby="dashboard-heading">
+        <ul class="tags"><li>React</li><li>APIs</li></ul>
         <h3 id="dashboard-heading">API integration dashboard</h3>
         <p>
           A data-driven web dashboard that pulls together multiple APIs, including Spotify and OpenWeather, with
@@ -182,7 +247,8 @@
         </ul>
       </article>
 
-      <article aria-labelledby="bracket-heading">
+      <article class="feature" aria-labelledby="bracket-heading">
+        <ul class="tags"><li>Design</li><li>Adobe</li></ul>
         <h3 id="bracket-heading">2024 March Madness bracket</h3>
         <figure>
           <img src="images/MarchMadnessBracket.png" alt="A pink-themed bracket for the 2024 NCAA men's basketball tournament, showing all 64 first-round teams with seeds and records, round dates from March 21 to April 8, and a large MARCH MADNESS banner across the bottom" width="707" height="382">
@@ -199,19 +265,22 @@
 
     <!-- CONTACT -->
     <section id="contact" aria-labelledby="contact-heading">
-      <h2 id="contact-heading">Contact</h2>
-      <p>
-        I'm looking for opportunities in tech and consulting, and I'm always happy to trade travel or food
-        recommendations. Reach out anytime.
-      </p>
+      <div class="contact-info">
+        <p class="eyebrow">Contact</p>
+        <h2 id="contact-heading">Let's <span>talk.</span></h2>
+        <p class="lead">
+          I'm looking for opportunities in tech and consulting, and I'm always happy to trade travel or food
+          recommendations. Reach out anytime.
+        </p>
 
-      <address>
-        <ul>
-          <li>Email: <a href="mailto:jainavne@msu.edu">jainavne@msu.edu</a></li>
-          <li>LinkedIn: <a href="https://www.linkedin.com/in/avnee-jain" rel="noopener">linkedin.com/in/avnee-jain</a></li>
-          <li>GitHub: <a href="https://github.com/avneejain" rel="noopener">github.com/avneejain</a></li>
-        </ul>
-      </address>
+        <address>
+          <ul>
+            <li><small>Email</small> <a href="mailto:jainavne@msu.edu">jainavne@msu.edu</a></li>
+            <li><small>LinkedIn</small> <a href="https://www.linkedin.com/in/avnee-jain" rel="noopener">linkedin.com/in/avnee-jain</a></li>
+            <li><small>GitHub</small> <a href="https://github.com/avneejain1" rel="noopener">github.com/avneejain1</a></li>
+          </ul>
+        </address>
+      </div>
 
       <form name="contact" method="post" data-netlify="true" aria-labelledby="form-heading">
         <h3 id="form-heading">Send me a message</h3>
@@ -219,16 +288,16 @@
           <legend>Your details</legend>
           <p>
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" autocomplete="name" required>
+            <input type="text" id="name" name="name" autocomplete="name" placeholder="Your name" required>
           </p>
           <p>
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" autocomplete="email" required>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com" required>
           </p>
         </fieldset>
         <p>
           <label for="message">Message</label>
-          <textarea id="message" name="message" rows="6" required></textarea>
+          <textarea id="message" name="message" rows="6" placeholder="What would you like to talk about?" required></textarea>
         </p>
         <p>
           <button type="submit">Send message</button>
@@ -238,8 +307,14 @@
   </main>
 
   <footer>
-    <p><small>&copy; <time datetime="2026">2026</time> Avnee Jain..</small></p>
-    <p><a href="#top">Back to top</a></p>
+    <p class="footer-brand"><strong>Avnee Jain</strong> Tech, consulting, and a little adventure.</p>
+    <ul class="footer-links">
+      <li><a href="mailto:jainavne@msu.edu">jainavne@msu.edu</a></li>
+      <li><a href="https://www.linkedin.com/in/avnee-jain" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://github.com/avneejain1" rel="noopener">GitHub</a></li>
+    </ul>
+    <p class="copyright"><small>&copy; <time datetime="2026">2026</time> Avnee Jain.</small></p>
+    <p class="back-to-top"><a href="#top">Back to top &uarr;</a></p>
   </footer>
 </body>
 </html>
