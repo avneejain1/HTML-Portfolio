@@ -15,11 +15,11 @@
 
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body id="top">
   <a href="#main">Skip to main content</a>
 
   <header>
-    <p id="top"><a href="#top"><strong>Avnee Jain</strong></a></p>
+    <p class="logo"><a href="#top"><strong>Avnee Jain</strong></a></p>
 
     <nav aria-label="Primary">
       <ul>
@@ -32,7 +32,7 @@
     </nav>
   </header>
 
-  <main id="main">
+  <main id="main" tabindex="-1">
 
     <!-- HERO -->
     <section id="intro" aria-labelledby="intro-heading">
@@ -139,7 +139,7 @@
         </details>
       </div>
 
-      <aside class="sidebar" aria-label="Skills and interests">
+      <div class="sidebar">
         <div class="card toolkit">
           <h3>Toolkit</h3>
           <dl>
@@ -184,7 +184,7 @@
             <li>Saying yes to any adventure</li>
           </ul>
         </div>
-      </aside>
+      </div>
     </section>
 
     <!-- PROJECTS -->
@@ -284,6 +284,7 @@
 
       <form name="contact" method="post" data-netlify="true" aria-labelledby="form-heading">
         <h3 id="form-heading">Send me a message</h3>
+        <p class="form-note">All fields are required.</p>
         <fieldset>
           <legend>Your details</legend>
           <p>
