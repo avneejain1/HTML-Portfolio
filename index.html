@@ -14,6 +14,12 @@
   <meta property="og:description" content="Information Science senior at Michigan State, headed towards tech and AI.">
 
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Dark/light mode: loads first so the saved theme applies before the page paints -->
+  <script src="theme.js"></script>
+  <!-- ScrollReveal (3rd-party library from a CDN) and my settings for it -->
+  <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js" defer></script>
+  <script src="reveal.js" defer></script>
 </head>
 <body id="top">
   <a href="#main">Skip to main content</a>
@@ -28,6 +34,18 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a class="button" href="#contact">Let's talk</a></li>
+        <li>
+          <button type="button" class="theme-toggle" id="theme-toggle" aria-pressed="false">
+            <span class="visually-hidden">Dark mode</span>
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path fill="currentColor" d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9z"/>
+            </svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <circle cx="12" cy="12" r="4.5" fill="currentColor"/>
+              <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/>
+            </svg>
+          </button>
+        </li>
       </ul>
     </nav>
   </header>

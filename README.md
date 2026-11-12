@@ -14,4 +14,9 @@ Personal portfolio for Avnee Jain, an Information Science senior at Michigan Sta
 - Colors, spacing, and type match the variables and styles in the Figma prototype
 - Fonts: Bricolage Grotesque and Figtree (Google Fonts)
 
+## JavaScript features
+- **Dark/light mode** (`theme.js`, my own code): the moon/sun button in the nav switches themes. It starts in your system setting, remembers your choice, and swaps the color tokens in `styles.css` for an inverse palette that still passes WCAG AA contrast.
+- **Scroll animations** ([ScrollReveal](https://scrollrevealjs.org) 4.0.9 from the unpkg CDN, configured in `reveal.js`): sections fade and slide in as you scroll. Animations are skipped for visitors who prefer reduced motion, and the page stays fully visible if the CDN can't load.
+- The two features don't conflict: project cards lift on hover with `top` instead of `transform`, so ScrollReveal's transforms never cancel the hover effect.
+
 Validated with the W3C Markup and CSS validators.

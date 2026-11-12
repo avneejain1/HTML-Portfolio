@@ -12,6 +12,16 @@
   --color-white: #ffffff;
   --color-muted: #7a4a63;
 
+  /* Role tokens: these are what flip between light and dark mode */
+  --color-surface: #ffffff;
+  --color-on-accent: #ffffff;
+  --color-border: #fbd3e2;
+  --color-highlight: #ffe58a;
+  --footer-bg: #2b1424;
+  --footer-text: #fbd3e2;
+  --footer-link: #ffffff;
+  --shadow-img: 0 6px 20px rgba(43, 20, 36, 0.18);
+
   --font-display: "Bricolage Grotesque", "Arial Black", sans-serif;
   --font-body: "Figtree", "Helvetica Neue", Arial, sans-serif;
 
@@ -61,7 +71,7 @@ body > a[href="#main"]:focus {
   top: 1rem;
   padding: 0.75rem 1.25rem;
   background: var(--color-pink);
-  color: var(--color-white);
+  color: var(--color-on-accent);
   font-weight: 700;
   border-radius: var(--radius-pill);
   box-shadow: var(--shadow-card-hover);
@@ -133,7 +143,7 @@ button[type="submit"] {
   border: 2px solid var(--color-pink);
   border-radius: var(--radius-pill);
   background-color: var(--color-pink);
-  color: var(--color-white);
+  color: var(--color-on-accent);
   font-family: var(--font-body);
   font-size: 1rem;
   font-weight: 600;
@@ -147,7 +157,7 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: var(--color-pink-dark);
   border-color: var(--color-pink-dark);
-  color: var(--color-white);
+  color: var(--color-on-accent);
   box-shadow: var(--shadow-card);
   transform: translateY(-2px);
 }
@@ -171,7 +181,7 @@ header {
   display: flow-root;
   padding: 1.1rem var(--gutter);
   background-color: var(--color-paper);
-  border-bottom: 2px solid var(--color-pink-soft);
+  border-bottom: 2px solid var(--color-border);
 }
 
 .logo {
@@ -240,7 +250,7 @@ main > section {
 }
 
 main > section + section {
-  border-top: 2px solid var(--color-pink-soft);
+  border-top: 2px solid var(--color-border);
 }
 
 /* ---------- Hero ---------- */
@@ -283,7 +293,7 @@ main > section + section {
   padding: 6.5rem 2rem 0;
   border: 4px dashed var(--color-pink);
   border-radius: 50%;
-  background-color: var(--color-white);
+  background-color: var(--color-surface);
   box-shadow: var(--shadow-card);
   text-align: center;
   transform: rotate(-8deg);
@@ -330,9 +340,9 @@ main > section + section {
   width: calc((100% - 3rem) / 3);
   margin-right: 1.5rem;
   padding: 1.75rem 2rem;
-  border: 2px solid var(--color-pink-soft);
+  border: 2px solid var(--color-border);
   border-radius: var(--radius-large);
-  background-color: var(--color-white);
+  background-color: var(--color-surface);
 }
 
 .facts li:last-child {
@@ -369,9 +379,9 @@ main > section + section {
 details {
   margin-bottom: 1rem;
   padding: 1.35rem 1.75rem;
-  border: 2px solid var(--color-pink-soft);
+  border: 2px solid var(--color-border);
   border-radius: var(--radius-large);
-  background-color: var(--color-white);
+  background-color: var(--color-surface);
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -457,7 +467,7 @@ ul li::marker {
   margin-bottom: 1.5rem;
   padding: 1.75rem;
   border-radius: var(--radius-large);
-  background-color: var(--color-white);
+  background-color: var(--color-surface);
   box-shadow: var(--shadow-card);
 }
 
@@ -499,7 +509,7 @@ dd {
 }
 
 .off-hours {
-  background-color: var(--color-gold);
+  background-color: var(--color-highlight);
   box-shadow: none;
 }
 
@@ -525,15 +535,17 @@ dd {
 }
 
 #projects article {
+  position: relative;
+  top: 0;
   float: left;
   width: calc((100% - 3rem) / 3);
   margin: var(--space-md) 1.5rem 0 0;
   padding: 1.75rem;
   border: 2px solid transparent;
   border-radius: var(--radius-large);
-  background-color: var(--color-white);
+  background-color: var(--color-surface);
   box-shadow: var(--shadow-card);
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  transition: top 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
 #projects article:nth-of-type(3n) {
@@ -547,7 +559,8 @@ dd {
 #projects article:hover {
   border-color: var(--color-pink-bright);
   box-shadow: var(--shadow-card-hover);
-  transform: translateY(-6px);
+  /* Lift with "top" instead of "transform" so it never collides with ScrollReveal's inline transform */
+  top: -6px;
 }
 
 #projects article .tags {
@@ -584,9 +597,9 @@ figure {
 img {
   max-width: 100%;
   height: auto;
-  border: 8px solid var(--color-white);
+  border: 8px solid var(--color-surface);
   border-radius: var(--radius-small);
-  box-shadow: 0 6px 20px rgba(43, 20, 36, 0.18);
+  box-shadow: var(--shadow-img);
 }
 
 figcaption {
@@ -627,9 +640,9 @@ address ul {
 address li {
   margin-bottom: 1rem;
   padding: 1rem 1.25rem;
-  border: 2px solid var(--color-pink-soft);
+  border: 2px solid var(--color-border);
   border-radius: var(--radius-large);
-  background-color: var(--color-white);
+  background-color: var(--color-surface);
   transition: border-color 0.2s ease;
 }
 
@@ -657,7 +670,7 @@ form {
   width: 48%;
   padding: 2.25rem 2.5rem;
   border-radius: var(--radius-large);
-  background-color: var(--color-white);
+  background-color: var(--color-surface);
   box-shadow: var(--shadow-card);
 }
 
@@ -692,9 +705,9 @@ textarea {
   width: 100%;
   margin-top: 0.4rem;
   padding: 0.85rem 1.1rem;
-  border: 2px solid var(--color-pink-soft);
+  border: 2px solid var(--color-border);
   border-radius: var(--radius-small);
-  background-color: var(--color-white);
+  background-color: var(--color-surface);
   color: var(--color-ink);
   font-family: var(--font-body);
   font-size: 1rem;
@@ -717,12 +730,12 @@ textarea:focus-visible {
 footer {
   display: flow-root;
   padding: var(--space-xl) var(--gutter);
-  background-color: var(--color-ink);
-  color: var(--color-pink-soft);
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
 }
 
 footer a {
-  color: var(--color-white);
+  color: var(--footer-link);
   font-weight: 600;
   text-decoration: none;
 }
@@ -742,7 +755,7 @@ footer :focus-visible {
 
 .footer-brand strong {
   display: block;
-  color: var(--color-white);
+  color: var(--footer-link);
   font-family: var(--font-display);
   font-size: 1.6rem;
 }
@@ -773,6 +786,110 @@ footer :focus-visible {
 
 .back-to-top a {
   color: var(--color-gold);
+}
+
+/* ---------- Dark mode ----------
+   theme.js sets data-theme="dark" on <html>. Only the color tokens change,
+   so every component picks up the inverse palette automatically. */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --color-ink: #fbeaf1;
+  --color-paper: #1c0d17;
+  --color-pink: #ff86b4;
+  --color-pink-dark: #ffb8d3;
+  --color-pink-soft: #4a2139;
+  --color-muted: #d4aec1;
+
+  --color-surface: #2a1522;
+  --color-on-accent: #22101b;
+  --color-border: #5a2a46;
+  --color-highlight: #3b2d0e;
+  --footer-bg: #12080f;
+  --footer-text: #e8c6d6;
+  --footer-link: #ffffff;
+  --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.45);
+  --shadow-card-hover: 0 18px 44px rgba(0, 0, 0, 0.6);
+  --shadow-img: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+}
+
+/* Smoothly fade between themes */
+body,
+header,
+.stamp,
+.facts li,
+details,
+.card,
+#projects article,
+address li,
+form,
+input,
+textarea,
+footer {
+  transition-property: background-color, color, border-color, box-shadow, top;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+
+/* ---------- Theme toggle button ---------- */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.theme-toggle {
+  position: relative;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  border: 2px solid var(--color-pink);
+  border-radius: 50%;
+  background-color: var(--color-surface);
+  color: var(--color-pink);
+  cursor: pointer;
+  vertical-align: middle;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background-color: var(--color-pink-soft);
+  transform: rotate(-15deg);
+}
+
+.theme-toggle svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1.3rem;
+  height: 1.3rem;
+  margin: -0.65rem 0 0 -0.65rem;
+  transition: opacity 0.3s ease, transform 0.4s ease;
+}
+
+/* Light mode shows the moon ("switch to dark"); dark mode shows the sun */
+.theme-toggle .icon-sun {
+  opacity: 0;
+  transform: rotate(-90deg) scale(0.5);
+}
+
+:root[data-theme="dark"] .theme-toggle .icon-sun {
+  opacity: 1;
+  transform: none;
+}
+
+:root[data-theme="dark"] .theme-toggle .icon-moon {
+  opacity: 0;
+  transform: rotate(90deg) scale(0.5);
 }
 
 /* ---------- Smaller screens ---------- */
